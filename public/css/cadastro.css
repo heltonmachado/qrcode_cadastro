@@ -1,0 +1,79 @@
+
+/* Estilo geral do corpo da página */
+body {
+    background-image: url('/public/images/seapbrasao.png'); /* Caminho da sua imagem */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+    background-size: 40% 100%; /* Para telas grandes como desktops de alta resolução */
+    background-color:#000000;
+}
+.form-container {
+        padding: 30px;
+        border-radius: 8px;
+        border: 2px solid white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .form-label,
+    .form-control {
+        font-size: 18px; /* Ajusta o tamanho das fontes para telas grandes */
+    }
+
+    .btn,
+    .btn-register {
+        width: 40%; /* Define a largura para ambos os botões */
+        padding: 10px 0; /* Ajuste do preenchimento */
+        font-size: 16px; /* Mesma fonte para ambos */
+        margin: 10px auto; /* Espaçamento e centralização */
+        display: block; /* Garante alinhamento em bloco */
+    }
+
+    .btn-primary,
+    .btn-register {
+        background-color: #007bff; /* Mesmo fundo para uniformidade */
+        color: white; /* Mesmo texto para uniformidade */
+    }
+
+
+/* Estilo geral */
+.form-control {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.form-label {
+    color: white;
+}
+
+.modal-body {
+    color: black;
+}
+
+.modal-title {
+    color: rgb(7, 7, 7);
+}
+  
+/* Ajuste para telas menores (celulares) */
+@media (max-width: 767px) {
+    body {
+        background-size: 85% 50%; /* Aumenta a imagem no fundo em telas pequenas */
+        background-color:rgb(13, 13, 14);
+    }
+
+    .form-container {
+        padding: 20px;
+        border-radius: 8px;
+        border: 2px solid white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .form-label,
+    .form-control {
+        font-size: 14px; /* Ajusta o tamanho das fontes */
+    }
+}

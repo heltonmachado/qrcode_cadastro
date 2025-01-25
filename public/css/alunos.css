@@ -1,0 +1,70 @@
+ /* Estilo geral do corpo da página */
+ body {
+    position: relative; /* Define o posicionamento como relativo para facilitar a aplicação de elementos filhos */
+    /*background-image: url('/public/images/fotodash.jpg'); /* Define uma imagem de fundo */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a área visível */
+    background-position: center center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Faz com que a imagem de fundo permaneça fixa ao rolar a página */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    min-height: 100vh; /* Define uma altura mínima de 100% da altura da janela */
+    color: black; /* Define a cor padrão do texto */
+  }
+  
+  /* Estilo para os links do menu de navegação */
+  .navbar-nav .nav-item .nav-link {
+    position: relative; /* Define o posicionamento como relativo */
+    padding-bottom: 5px; /* Adiciona um espaço abaixo do texto para a linha de destaque */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Estilo geral da barra de navegação */
+  .navbar {
+    width: 100%; /* Faz a barra de navegação ocupar toda a largura da página */
+    background-color: #c7cdcf; /* Define a cor de fundo da barra */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar profundidade */
+  }
+  
+  /* Efeito ao passar o mouse sobre os links da navegação */
+  .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #04ADF0; /* Adiciona uma linha abaixo do texto */
+    color: #0f0f0f; /* Altera a cor do texto */
+    text-align: center; /* Mantém o texto centralizado */
+    font-size: 15px; /* Define o tamanho da fonte */
+  }
+  
+  /* Alinha o ícone do menu hambúrguer à direita */
+  .navbar-toggler {
+    margin-left: auto; /* Empurra o ícone para o lado direito da barra */
+  }
+  
+  /* Botão com ID "send-form" - estilo padrão */
+  #send-form {
+    background-color: #104261; /* Define a cor de fundo inicial */
+    border-color: #104261; /* Define a cor da borda */
+    color: white; /* Define a cor do texto */
+  }
+  
+  /* Botão com ID "send-form" - efeito ao passar o mouse */
+  #send-form:hover {
+    background-color: #07A5E4; /* Altera a cor de fundo ao passar o mouse */
+    border-color: #07A5E4; /* Altera a cor da borda ao passar o mouse */
+    color: white; /* Mantém a cor do texto branca */
+  }
+  
+  /* Estilo para os cartões */
+  .card {
+    border-radius: 10px; /* Arredonda os cantos do cartão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar profundidade */
+  }
+  
+  /* Estilo para o título dos cartões */
+  .card-title {
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+  }
+  
+  /* Estilo para o container principal do dashboard */
+  .dashboard-container {
+    margin-top: 2rem; /* Adiciona margem superior */
+  }
+  

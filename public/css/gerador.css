@@ -1,0 +1,160 @@
+/* Barra de navegação */
+.navbar {
+    background-color: #C8CDCF;
+    width: 100%; /* Faz a barra de navegação ocupar toda a largura da página */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar profundidade */
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: rgb(24, 23, 23);
+    position: relative; /* Define o posicionamento como relativo */
+    padding-bottom: 5px; /* Adiciona um espaço abaixo do texto para a linha de destaque */
+    text-align: center; /* Centraliza o texto */
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #04ADF0; /* Adiciona uma linha abaixo do texto */
+    color: #0f0f0f; /* Altera a cor do texto */
+    font-size: 15px; /* Define o tamanho da fonte */
+}
+
+.navbar .navbar-toggler-icon {
+   
+}
+
+/* Estilo geral do corpo da página */
+body {
+    position: relative;
+    background-image: url('/public/images/cadastrolog.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .col-md-4 {
+        max-width: 100%;
+    }
+
+    #qr-header h3 {
+        font-size: 1.5rem;
+    }
+
+    #qr-form input {
+        font-size: 0.9rem;
+    }
+
+    #send-form {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 0.9rem;
+    }
+
+    #qr-header h3 {
+        font-size: 1.25rem;
+    }
+
+    #qr-form input {
+        font-size: 0.85rem;
+    }
+
+    #send-form {
+        font-size: 0.9rem;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+}
+
+/* Estilos do formulário */
+#qr-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+input.form-control {
+    border-radius: 8px;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+/* Estilo para os links do menu de navegação */
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* Botão com ID "send-form" */
+#send-form {
+    background-color: #104261;
+    border-color: #104261;
+    color: white;
+}
+
+#send-form:hover {
+    background-color: #07A5E4;
+    border-color: #07A5E4;
+    color: white;
+}
+
+/* Estilo para os cartões */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.dashboard-container {
+    margin-top: 2rem;
+}
+
+/* Imagem do QR Code */
+#qr-img {
+    max-width: 100%;
+    height: auto;
+}
+
+#qr-text {
+    font-size: 1rem;
+    margin-top: 15px;
+}
